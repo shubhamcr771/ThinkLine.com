@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create a New Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <h1 class="px-5 btn-dark">ThinkLine.</h1>
+        </a>
+        <a
+          href="/list"
+          class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none"
+        >
+          <h1 class="px-5 btn-dark text-body-emphasis">Blogs</h1>
+        </a>
+      </header>
+
+      <div class="px-4 form-floating pt-5 my-5 text-center border-bottom">
+        <h1
+          class="display-5 my-5 text-body-tertiary fw-bold btn-dark text-body-emphasis"
+        >
+          Create Your Blog
+        </h1>
+        <form method="POST" action="/create">
+          <input
+            class="form-control mb-3"
+            placeholder="Title Here.."
+            type="text"
+            id="title"
+            name="title"
+            required
+          />
+          <textarea
+            class="form-control mb-3"
+            style="font-size: 24px"
+            placeholder="Write content here...."
+            id="content"
+            name="content"
+            rows="8"
+            required
+          ></textarea>
+          <button class="btn btn-lg btn-success font-monospace" type="submit">
+            Create Your Post
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-hV+kIeGR8tJOdVIqDjBngb49/j1K8LJZOZUJcI9pjJ1uoGpFVk5YbL8Yfo0I++pD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
